@@ -1,0 +1,53 @@
+html {
+    font-size: 120%;
+    font-family: "Charis SIL", "Bitstream Charter",
+      "Constantia", "Georgia", "Hoefler Text", serif;
+}
+
+* {
+    margin: 0;
+}
+
+* + * {
+    margin-top: 0.5rem;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    max-width: 32rem;
+}
+
+a {
+    color: inherit;
+}
+
+*[role="heading"] p {
+    font-size: 150%;
+    text-align: center;
+}
+
+.dms_look-across {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dms_logo {
+    font-size: 4rem;
+}
+
+.dms_contact-info p {
+    margin: 0 0 0 auto;
+}
+
+.dms_saying {
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+	             "Palatino", "Palatino Linotype", serif;
+    font-style: italic;
+    font-size: 80%;
+}
