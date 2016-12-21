@@ -14,19 +14,29 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+main {
+    margin: 2rem 0;
 }
 
 p {
     max-width: 32rem;
 }
 
+main article>p {
+    line-height: 1.2em;
+    text-align: justify;
+}
+
 a {
     color: inherit;
 }
 
-*[role="heading"] p {
+[role="heading"] p {
     font-size: 150%;
     text-align: center;
 }
@@ -34,7 +44,7 @@ a {
 .dms_look-across {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .dms_logo {
