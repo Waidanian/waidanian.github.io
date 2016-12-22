@@ -20,7 +20,7 @@ body {
 }
 
 main {
-    margin: 2rem 0;
+    margin: 2rem 1rem;
 }
 
 p {
@@ -29,11 +29,14 @@ p {
 
 main article>p {
     line-height: 1.2em;
-    text-align: justify;
 }
 
 a {
     color: inherit;
+}
+
+time {
+    font-style: italic;
 }
 
 [role="heading"] p {
@@ -60,4 +63,10 @@ a {
 	             "Palatino", "Palatino Linotype", serif;
     font-style: italic;
     font-size: 80%;
+}
+
+.dms_proposition {
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+	             "Palatino", "Palatino Linotype", serif;
+    font-size: 90%;
 }
