@@ -19,12 +19,12 @@ body {
     justify-content: center;
 }
 
-article {
-    margin: 1rem;
+main {
+    margin: 2rem 1rem;
 }
 
 p {
-    max-width: 30rem;
+    max-width: 32rem;
 }
 
 main article>p {
@@ -35,15 +35,8 @@ a {
     color: inherit;
 }
 
-a:hover {
-    color: brown;
-}
-
 time {
     font-style: italic;
-    font-family: "TeX Gyre Pagella", "TeX Palladio",
-	             "Palatino", "Palatino Linotype", serif;
-    font-size: 90%;
 }
 
 [role="heading"] p {
@@ -55,7 +48,6 @@ time {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .dms_logo {
@@ -66,31 +58,11 @@ time {
     margin: 0 0 0 auto;
 }
 
-.dms_cover-page {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.dms_context-leaders {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.dms_anchor-pad {
-    border-left: 1px dotted gray;
-    padding-left: 0.5rem;
-    max-width: 29rem;
-}
-
 .dms_saying {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
 	             "Palatino", "Palatino Linotype", serif;
     font-style: italic;
     font-size: 80%;
-    color: rgb(160, 96, 96);
 }
 
 .dms_proposition {

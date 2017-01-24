@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Stylus: Digital Modular Systems</title>
+<meta name="author" content="Christian Gagné" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="dms.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<article class="dms_card">
+    <header role="heading">
+        <p>｢ Stylus ｣</p>
+        <p>Digital Modular Systems</p>
+    </header>
+    <section class="dms_look-across">
+        <section class="dms_logo" title="The Stylus logo">✒</section>
+        <section class="dms_contact-info">
+            <p>Christian Gagné</p>
+            <p class="dms_saying">Sapere aude, incipe.</p>
+            <p><a href="https://github.com/Waidanian">GitHub profile</a></p>
+            <p><a href="https://www.linkedin.com/in/christian-gagné-2512063a">LinkedIn</a></p>
+            <p><a href="https://waidanian.wordpress.com/">Blog</a></p>
+        </section>
+    </section>
+</article>
+<main>
+    <article>
+        <p>Be it in visual or sonic domains, I strive to reveal the power that modular thinking brings to design and problem-solving. I believe in a digital literacy where all actors – be they creatives, technicals, leaders or supporters – feel empowered and work according to the strengths of their respective cultures.</p>
+    </article>
+    <article>
+        <header role="heading"><p>Current aphoristic frame</p></header>
+        <p role="heading">｢ Macros as cognitive catalysts in digital performance ｣</p>
+        <p><time datetime="2016-12-21">2016-12-21</time></p>
+        <p>Consider real-time applications, such as audio signal processing in the context of live performance. One manipulation might be mapped to one operation, such as:</p>
+        <p class="dms_proposition">‹Moving one continuous controller› <em>means</em> ‹modulating amplitude proportionally›.</p>
+        <p>However, if we consider the natural behavior of e.g. acoustic wind instruments, we find ourselves yearning one manipulation mapped to multiple signal processing operations – nature is complex and made of interrelated substances that react together, not in isolation! In this case:</p>
+        <p class="dms_proposition">‹If a wind instrument’s sound is louder›, ‹there will probably be more high harmonics› (the sound is brighter).</p>
+        <p>Amplitude and frequency content change together. So we want this relation:</p>
+        <p class="dms_proposition">‹Moving one continuous controller› <em>means that</em> ‹amplitude is modulated proportionally› <em>and</em> ‹harmonics are added according to amplitude increase›.</p>
+        <p>The manipulation’s quantity acts as parameter for two interrelated operations. The quantity is <em>substituted</em> twice in the resulting operation set. The combined operation, from the performer’s perspective, is <em>one</em> act and can be cognitively apprehended as such, which respects the inherent complexity of the performance and gives the performer more <em>power</em>. The combined operation is a substitution (macro) defined in a statement and becomes a meaningful, useful item in a technical vocabulary. This is called ordaining technology to the needs of a given domain, and is the culturally sound thing to do.</p>
+    </article>
+</main>
+</body>
