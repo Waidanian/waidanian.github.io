@@ -92,9 +92,8 @@ time {
 }
 
 .dms_anchor-pad {
-    border-left: 1px dotted gray;
-    padding-left: 0.5rem;
-    max-width: 29rem;
+    border-bottom: 2px solid gray;
+    padding-bottom: 1rem;
 }
 
 .dms_saying {
