@@ -23,12 +23,24 @@ article {
     margin: 1rem;
 }
 
-p {
+p, li, dd, blockquote {
     max-width: 30rem;
 }
 
-main article>p {
+ul {
+    list-style: inside;
+}
+
+main article p,
+main article li,
+main article dd,
+main article bockquote {
     line-height: 1.2em;
+}
+
+pre, code, kbd, var {
+    font-family: "Consolas", "Menlo",
+                 "Inconsolata", monospace;
 }
 
 a {
