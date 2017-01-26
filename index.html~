@@ -41,7 +41,7 @@
       <header role="heading">
         <p>Portfolio, Propositions</p>
       </header>
-        <p role="heading">｢ Use of TeX and related software in Web
+        <p role="heading">｢ Using TeX and related software in Web
           content production ｣</p>
         <p class="dms_anchor-pad">My <a href="https://waidanian.github.io/organic-tex-demo/">Organic
           TeX Demo</a> shows how TeX / LaTeX, Emacs Org-mode and other
@@ -57,17 +57,56 @@
           production, in the context of
           the <a href="https://github.com/HU15/">HU15</a> group’s
           publishing work in the digital humanities.</p>
+        <p role="heading">｢ Developing a content workflow and custom
+        styles for an institutional website on the Squarespace
+        platform ｣</p>
+        <p class="dms_anchor-pad">My work with
+            the <a href="http://ecoledemusiquelavoie.com/">Lavoie
+            music school</a>
+          <code>(fr)</code> involved teaching the site’s managers
+        how writing directly for the Web in the Markdown format can
+        help them deliver a powerful message for their audience of
+        media-aware students and keen tutors. With minimal CMS
+        dependencies and tasteful custom styles that set the tone, the
+        school has found its voice and reaches eager students in the
+        community who discover new passions through musical practice.
+        </p>
+        <p role="heading">｢ Creating an empowering relational
+          vocabulary and meaningful visualizations for editorial
+          projects in the digital humanities ｣
+        </p>
+        <p class="dms_anchor-pad">The <a href="https://github.com/HU15/">HU15</a>
+        group is a collective of researchers in the field of French
+        Medieval literature. I designed for
+        them <a href="http://hu15.github.io/histoires-universelles-xv/def/mod-contrib.xhtml">a
+        set of CSS styles that are applied directly to TEI XML
+        manuscript transcriptions</a> <code>(fr)</code>. I also
+        showed <a href="http://hu15.github.io/histoires-universelles-xv/def/relations.xhtml">how
+        the abstract RDF model can be used independently of concrete
+        syntax to formalize intuitive statements relating segments of
+        text</a> <code>(fr)</code>, in a manner that is respectful of
+        a text historian’s techniques and cognitive goals.</p>
     </article>
     <article>
       <header role="heading">
         <p>In Season</p>
       </header>
-        <p>The <a href="http://tug.org/">TeX Users Group</a>’s
+      <ul>
+        <li>The <a href="http://tug.org/">TeX Users Group</a>’s
           activity calendar is looking very good again this year. Do
           stay tuned on the website, eventually through its XML feeds,
           in order to learn first-hand about the latest developments
           in the community that develops and maintains the very best
-          suite of document production tools!</p>
+            suite of document production tools!</li>
+        <li>Québec City’s
+          ‘<a href="https://semainenumerique.com/">Digital
+          Week</a>’ <code>(fr)</code> is on the horizon. I will be
+          attending several events,
+          especially <a href="https://webaquebec.org/">WAQ17</a> <code>(fr)</code>
+          and the famed Warp Zone! I am pleased to see this
+          multi-event grow and become more and more inclusive of the
+          various fields that make up the Digital Domain.</li>
+      </ul>
     </article>
     <article>
       <header role="heading">
