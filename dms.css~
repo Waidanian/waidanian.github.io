@@ -23,12 +23,24 @@ article {
     margin: 1rem;
 }
 
-p {
+p, li, dd, blockquote {
     max-width: 30rem;
 }
 
-main article>p {
+ul {
+    list-style: inside;
+}
+
+main article p,
+main article li,
+main article dd,
+main article bockquote {
     line-height: 1.2em;
+}
+
+pre, code, kbd, var {
+    font-family: "Consolas", "Menlo",
+                 "Inconsolata", monospace;
 }
 
 a {
@@ -80,9 +92,8 @@ time {
 }
 
 .dms_anchor-pad {
-    border-left: 1px dotted gray;
-    padding-left: 0.5rem;
-    max-width: 29rem;
+    border-bottom: 2px solid gray;
+    padding-bottom: 1rem;
 }
 
 .dms_saying {
