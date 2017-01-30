@@ -1,7 +1,7 @@
 html {
     font-size: 120%;
     font-family: "Charis SIL", "Bitstream Charter",
-      "Constantia", "Georgia", "Hoefler Text", serif;
+      "Constantia", "Georgia", "Palatino", serif;
 }
 
 * {
@@ -29,13 +29,21 @@ p, li, dd, blockquote {
 
 ul {
     list-style: inside;
+    padding: 0;
 }
 
 main article p,
 main article li,
 main article dd,
-main article bockquote {
+main article blockquote {
     line-height: 1.2em;
+}
+
+p img,
+li img,
+dd img,
+blockquote img {
+    vertical-align: middle;
 }
 
 pre, code, kbd, var {
@@ -83,6 +91,13 @@ p[role="heading"] + p {
     font-size: 4rem;
 }
 
+.dms_contact-info p img,
+.dms_contact-info li img,
+.dms_contact-info dd img,
+.dms_contact-info blockquote img {
+    max-width: 1rem;
+}
+
 .dms_contact-info p {
     margin: 0 0 0 auto;
 }
@@ -101,7 +116,6 @@ p[role="heading"] + p {
 }
 
 .dms_anchor-pad {
-    border-bottom: 2px solid gray;
     padding-bottom: 1rem;
 }
 

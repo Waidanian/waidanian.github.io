@@ -24,7 +24,7 @@ article {
 }
 
 p, li, dd, blockquote {
-    max-width: 30rem;
+    max-width: 28rem;
 }
 
 ul {
@@ -40,7 +40,7 @@ main article bockquote {
 
 pre, code, kbd, var {
     font-family: "Consolas", "Menlo",
-                 "Inconsolata", monospace;
+      "Source Code Pro", monospace;
 }
 
 a {
@@ -52,15 +52,24 @@ a:hover {
 }
 
 time {
-    font-style: italic;
+    font-weight: bold;
     font-family: "TeX Gyre Pagella", "TeX Palladio",
-	             "Palatino", "Palatino Linotype", serif;
-    font-size: 90%;
+      "Palatino", "Palatino Linotype", serif;
+    font-size: 80%;
 }
 
 [role="heading"] p {
     font-size: 150%;
     text-align: center;
+}
+
+p[role="heading"] {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+p[role="heading"] + p {
+    margin-top: 1rem;
 }
 
 .dms_look-across {
@@ -98,14 +107,19 @@ time {
 
 .dms_saying {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
-	             "Palatino", "Palatino Linotype", serif;
+      "Palatino", "Palatino Linotype", serif;
     font-style: italic;
     font-size: 80%;
-    color: rgb(160, 96, 96);
+    color: rgb(111, 78, 55); /* The color called ‘Coffee’
+                                in the ISCC–NBS System! */
 }
 
 .dms_proposition {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
-	             "Palatino", "Palatino Linotype", serif;
+      "Palatino", "Palatino Linotype", serif;
     font-size: 90%;
+}
+
+p[role="heading"] + p.dms_post-heading-addendum {
+    margin-top: 0;
 }

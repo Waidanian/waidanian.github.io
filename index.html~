@@ -10,7 +10,7 @@
 <body>
 <article class="dms_card">
     <header role="heading">
-        <p>｢ Stylus ｣</p>
+        <p>｢&nbsp;Stylus&nbsp;｣</p>
         <p>Digital Modular Systems</p>
         <p class="dms_saying">Harmonizing Logic and Craft</p>
     </header>
@@ -41,8 +41,8 @@
       <header role="heading">
         <p>Portfolio, Propositions</p>
       </header>
-        <p role="heading">｢ Using TeX and related software in Web
-          content production ｣</p>
+        <p role="heading">｢&nbsp;Using TeX and related software in Web
+          content production&nbsp;｣</p>
         <p class="dms_anchor-pad">My <a href="https://waidanian.github.io/organic-tex-demo/">Organic
           TeX Demo</a> shows how TeX / LaTeX, Emacs Org-mode and other
           document formats based on macros can be used to produce
@@ -57,9 +57,9 @@
           production, in the context of
           the <a href="https://github.com/HU15/">HU15</a> group’s
           publishing work in the digital humanities.</p>
-        <p role="heading">｢ Developing a content workflow and custom
+        <p role="heading">｢&nbsp;Developing a content workflow and custom
         styles for an institutional website on the Squarespace
-        platform ｣</p>
+        platform&nbsp;｣</p>
         <p class="dms_anchor-pad">My work with
             the <a href="http://ecoledemusiquelavoie.com/">Lavoie
             music school</a>
@@ -71,9 +71,9 @@
         school has found its voice and reaches eager students in the
         community who discover new passions through musical practice.
         </p>
-        <p role="heading">｢ Creating an empowering relational
+        <p role="heading">｢&nbsp;Creating an empowering relational
           vocabulary and meaningful visualizations for editorial
-          projects in the digital humanities ｣
+          projects in the digital humanities&nbsp;｣
         </p>
         <p class="dms_anchor-pad">The <a href="https://github.com/HU15/">HU15</a>
         group is a collective of researchers in the field of French
@@ -130,9 +130,9 @@
       <header role="heading">
         <p>Aphoristic space</p>
       </header>
-        <p role="heading">｢ Macros as cognitive catalysts in digital
-        performance ｣</p>
-        <p><time datetime="2016-12-21">2016-12-21</time></p>
+        <p role="heading">｢&nbsp;Macros as cognitive catalysts in digital
+        performance&nbsp;｣</p>
+        <p class="dms_post-heading-addendum"><time datetime="2016-12-21">2016-12-21</time></p>
         <p>Consider real-time applications, such as audio signal
         processing in the context of live performance. One
         manipulation might be mapped to one operation, such as:</p>
