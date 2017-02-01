@@ -18,10 +18,13 @@
         <section class="dms_logo" title="The Stylus logo">✒</section>
         <section class="dms_contact-info">
             <p>Christian Gagné</p>
-            <p><a href="https://github.com/Waidanian">GitHub
-            profile</a></p>
-            <p><a href="https://www.linkedin.com/in/christian-gagné-2512063a">LinkedIn</a></p>
-            <p><a href="https://waidanian.wordpress.com/">Blog</a></p>
+            <p><a href="https://github.com/Waidanian">
+                <img src="./social-assets/GitHub-Mark-32px.png"
+                alt="[GitHub Mark]"/> GitHub profile</a></p>
+            <p><a href="https://www.linkedin.com/in/christian-gagné-2512063a"><img src="./social-assets/In-2C-28px-R.png"
+            alt="[LinkedIn logo]"/> LinkedIn</a></p>
+            <p><a href="https://waidanian.wordpress.com/"><img src="./social-assets/wordpress-logo-32-blue.png"
+            alt="[WordPress logo]"/> Blog</a></p>
         </section>
     </section>
 </article>

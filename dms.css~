@@ -1,7 +1,7 @@
 html {
-    font-size: 120%;
+    font-size: 125%;
     font-family: "Charis SIL", "Bitstream Charter",
-      "Constantia", "Georgia", "Hoefler Text", serif;
+      "Constantia", "Georgia", "Palatino", serif;
 }
 
 * {
@@ -29,13 +29,21 @@ p, li, dd, blockquote {
 
 ul {
     list-style: inside;
+    padding: 0;
 }
 
 main article p,
 main article li,
 main article dd,
-main article bockquote {
+main article blockquote {
     line-height: 1.2em;
+}
+
+p img,
+li img,
+dd img,
+blockquote img {
+    vertical-align: middle;
 }
 
 pre, code, kbd, var {
@@ -48,7 +56,7 @@ a {
 }
 
 a:hover {
-    color: brown;
+    color: rgb(111, 78, 55);
 }
 
 time {
@@ -81,10 +89,17 @@ p[role="heading"] + p {
 
 .dms_logo {
     font-size: 4rem;
+    padding: 1rem;
+}
+.dms_contact-info p img,
+.dms_contact-info li img,
+.dms_contact-info dd img,
+.dms_contact-info blockquote img {
+    max-width: 1rem;
 }
 
-.dms_contact-info p {
-    margin: 0 0 0 auto;
+.dms_contact-info {
+    margin-left: 0 0 0 auto;
 }
 
 .dms_cover-page {
@@ -101,7 +116,6 @@ p[role="heading"] + p {
 }
 
 .dms_anchor-pad {
-    border-bottom: 2px solid gray;
     padding-bottom: 1rem;
 }
 
@@ -110,14 +124,29 @@ p[role="heading"] + p {
       "Palatino", "Palatino Linotype", serif;
     font-style: italic;
     font-size: 80%;
-    color: rgb(111, 78, 55); /* The color called ‘Coffee’
-                                in the ISCC–NBS System! */
+    color: rgb(111, 78, 55);
 }
 
 .dms_proposition {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
       "Palatino", "Palatino Linotype", serif;
-    font-size: 90%;
+    font-size: 80%;
+    line-height: 1.5em;
+}
+
+.dms_read-more {
+    color: white;
+    background-color: rgb(111, 78, 55);
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+      "Palatino", "Palatino Linotype", serif;
+    font-size: 80%;
+    text-decoration: none;
+    padding: 0 0.5ex 0 0.5ex;
+}
+
+.dms_read-more:hover {
+    color: rgb(111, 78, 55);
+    background-color: inherit;
 }
 
 p[role="heading"] + p.dms_post-heading-addendum {

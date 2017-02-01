@@ -99,8 +99,7 @@
         resulting module, along with an earnest proposition to write a
         new module implementing the same algorithms within an
           industry-standard framework.</p>
-        <p><a href="./needledrop-proposal"
-        class="dms_read-more">·&nbsp;Read more&nbsp;·</a></p>
+        <p><a class="dms_read-more">·&nbsp;Read more&nbsp;·</a></p>
         <p role="heading">｢&nbsp;Creating an empowering relational
           vocabulary and meaningful visualizations for editorial
           projects in the digital humanities&nbsp;｣
@@ -200,13 +199,4 @@
     </article>
   </section>
 </main>
-<footer class="dms_leading-banner">
-  <article>
-    <a href=".">    
-      <p>｢&nbsp;Stylus&nbsp;｣ DMS</p>
-      <p>© Christian Gagné 2017</p>
-    </a>
-  </article>
-</footer>
 </body>
-</html>
