@@ -2,6 +2,8 @@ html {
     font-size: 125%;
     font-family: "Charis SIL", "Bitstream Charter",
       "Constantia", "Georgia", "Palatino", serif;
+    line-height: 1.5em;
+    height: 100%;
 }
 
 * {
@@ -13,10 +15,14 @@ html {
 }
 
 body {
+    margin: 0;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+}
+
+main {
+    flex: 1;
 }
 
 article {
@@ -80,26 +86,49 @@ p[role="heading"] + p {
     margin-top: 1rem;
 }
 
+.dms_leading-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+}
+
+.dms_leading-banner a {
+    text-decoration: none;
+}
+
+.dms_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .dms_look-across {
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    line-height: 1.25em;
+    margin-top: 1rem;
 }
 
 .dms_logo {
     font-size: 4rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
+
+.dms_contact-info {
+    margin: 0;
+}
+
 .dms_contact-info p img,
 .dms_contact-info li img,
 .dms_contact-info dd img,
 .dms_contact-info blockquote img {
     max-width: 1rem;
-}
-
-.dms_contact-info {
-    margin-left: 0 0 0 auto;
 }
 
 .dms_cover-page {
@@ -115,16 +144,22 @@ p[role="heading"] + p {
     flex-wrap: wrap;
 }
 
-.dms_anchor-pad {
-    padding-bottom: 1rem;
+.dms_page-topic {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .dms_saying {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
       "Palatino", "Palatino Linotype", serif;
     font-style: italic;
-    font-size: 80%;
     color: rgb(111, 78, 55);
+}
+
+[role="heading"] .dms_saying {
+    font-size: 100%;
 }
 
 .dms_proposition {
