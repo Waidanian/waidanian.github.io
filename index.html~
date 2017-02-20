@@ -16,7 +16,9 @@
         <p class="dms_saying">Harmonizing Logic and Craft</p>
     </header>
     <section class="dms_look-across">
-        <section class="dms_logo" title="The Stylus logo">✒</section>
+      <section class="dms_logo" title="The Stylus
+      logo"><img src="stylus-logo.svg" alt=""/>
+      </section>
         <section class="dms_contact-info">
             <p>Christian Gagné</p>
             <p><a href="https://github.com/Waidanian">
@@ -82,7 +84,7 @@
         <p><a href="http://ecoledemusiquelavoie.com/"
             class="dms_read-more">·&nbsp;View project site&nbsp;·</a></p>
         <p role="heading">｢&nbsp;Teaching practical recursion to CS
-        students by using industry-relevant, non-numeral data
+        students by using industry-relevant, non-numeric data
         structures&nbsp;｣</p>
         <p class="dms_post-heading-addendum
           dms_proposition">（&nbsp;Developing the ‘<em>Needledrop</em> Level
