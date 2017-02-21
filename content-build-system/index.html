@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta charset="utf-8" />
+<title>A build system for Web content | Stylus DMS</title>
+<meta name="author" content="Christian Gagné" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="../dms.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+<header role="heading" class="dms_leading-banner">
+  <article>
+    <a href="../.">    
+      <p>｢&nbsp;Stylus&nbsp;｣</p>
+      <p>Digital Modular Systems</p>
+    </a>
+  </article>
+</header>
+<main>
+  <section class="dms_page-topic">
+    <article>
+      <header role="heading"><p>｢&nbsp;A Build System for Web
+          Content&nbsp;｣</p>
+        <p class="dms_flow-stamp">·&nbsp;work-in-progress&nbsp;·</p>
+      </header>
+<p>
+In order to produce great content and integrate it successfully into a
+website or app, the case has already been made for <a href="https://www.smashingmagazine.com/2016/05/content-first-prototyping/">starting with
+content during the prototyping phase</a> and <a href="http://alistapart.com/article/content-out-layout">building the canvas from
+the content instead of the opposite</a>. Also, with the rise of modern
+build tools for Web development, many options have emerged and they
+have been extensively surveyed by the community,
+<a href="https://www.smashingmagazine.com/2015/10/building-web-applications-with-make/">along with their classic alternatives</a>.
+</p>
+
+<p>
+For a content designer, it makes sense to put all this together and
+set out to find a build system that works well for content. Using a
+content build system should result in improved content workflows that
+help reduce friction between the work of content editors, designers
+and developers. It should also help deliver quality products more
+consistently to the integrators, who will be handed assets that feel
+substantial and fall into place naturally within the site or app
+structure.
+</p>
+
+<p>
+In my work with scientific or academic organizations, I’ve been led to
+use different content building workflows depending on the respective
+practices of the creators on the one hand and the developers or
+integrators on the other. I will be presenting one possible workflow
+that targets a static website with technical content, using both
+venerable tools like <code>make</code> and shiny modern formats like SVG and
+CommonMark. The emphasis will be on the programmatic techniques that
+convene with text content that is highly structured (with
+e.g. WAI-ARIA accessibility markup) and finely styled (with modern CSS
+respecting recommended practices). I will also mention alternatives
+(for example, Gulp in place of <code>make</code>) in order to show general
+applicability.
+</p>
+
+<p role="heading">Content acquisition phase</p>
+<p>
+If I am working on a pre-existing website, I make sure to start with
+the actual content that is already in the wild and has been serving
+its purpose with real users.
+</p>
+
+<p>
+I use a HTML content selection tool to make “atomic” files of the
+blocks identified as self-contained content units in the original HTML
+page. This is one of the first steps in my typical <code>make</code> file.
+</p>
+
+<p role="heading">Atomic content styling</p>
+<p>
+Because the content atoms have been extracted into separate files,
+they can be included as individual content frames in my LibreOffice
+Draw prototype. The Draw prototyping does not come into the scope of
+the present article <i>per se</i>, but I will provide a more detailed
+account of it elsewhere. Now this is the hot part: my Draw prototype
+<i>references</i> the content atoms, so by default they remain as separate
+files and don’t need to be explicitly re-included if I modifify them
+from outside. This allows me to lead the <i>content prototyping</i>
+(acquisition) and the <i>content styling</i> steps concurrently. Right now,
+LibreOffice Draw is my tool of choice for that because it has some
+intrinsic advantages when working with highly-structured HTML, but of
+course many alternatives exist. You can consider the prototyping tool
+like another swappable module in the system I’m describing here.
+</p>
+
+<p role="heading">Disposition in canvas</p>
+<p>
+The definitions of <i>content atom</i> and <i>canvas</i> here will depend on
+multiple variables given by the domain and the particular
+project. Typically, a content atom can be an <code>article</code> element if each
+article is short, but if the whole content run is lengthier each atom
+might be a <code>section</code>. Now it’s important to remember that, in the
+modern HTML world-view, <code>section</code> elements are very different from
+<code>div</code> elements and I believe it is proper to enclose content in as
+many sections as necessary.
+</p>
+
+<p>
+Structuring the content in this way has many advantages over simply
+relying on the sequence of <code>h1</code> &#x2026; <code>h6</code> elements dispersed among
+paragraphs. <code>section</code> elements add paired delimiters that make more
+relations explicit, which in turn makes contextual styling and
+transclusion easier. The elusive “HTML layout algorithm” might have
+been shunned by the mainstream HTML5 implementations, but at any rate
+nothing prevents us from adding more structure around the parts of
+content runs! In HTML5.1, we are even explicitly allowed to add a
+<code>header</code> element as the first element of any enclosing <code>section</code> – it
+will even automatically receive a different ARIA role from that of the
+page’s outermost <code>header</code>. This is great for e.g. titling blocks
+containing ancillary information items that must receive their own
+scoped style rules.
+</p>
+
+<p>
+Beyond the atomic runs, the canvas styling proper refers to the local
+“narrative” layout, which can be handled by CSS modules such as
+Flexbox – more on that below.
+</p>
+
+<p role="heading">Content plate build</p>
+<p>
+This is the step that can be automated more easily. Once the assets
+are ready, the modules can be assembled into what I like to call a
+<i>plate</i>. I do not say <i>page</i>, because the final HTML page that
+actually gets published might be handled further downstream depending
+on the organization’s needs. The plate is the content set in its
+canvas, bringing with it all of the scoped styles necessary for its
+full interpretation.
+</p>
+
+<p>
+The main tasks here are actually transclusion and validation. Much of
+the work done here is what is traditionally associated with template
+processors, server-side includes and suchlike.
+</p>
+
+<p role="heading">A “grammar” of prototyping and building</p>
+<p>
+All that we have seen so far is a series of conditional steps, with
+varying numbers and levels of sub-task at each step. There happens to
+exist a convenient way to represent such processes both schematically
+and operationally: grammatical forms. Below is a BNF-like grammar that
+sums up the steps I have described in the previous sections. Following
+early examples, I use the arrow as the derivation metasymbol, since it
+works just as well as the established <code>::=</code> but is arguably
+clearer. It’s also very enlightening to note that in its original use,
+BNF encourages natural-language descriptions in the angled brackets
+and that these variable expressions were originally called <i>classes</i>
+(in the mathematical sense). In our case, the variables represent
+<i>classes of tasks</i>.
+</p>
+
+<pre>
+Web content build → 〈 content acquisition 〉
+                    〈 atomic content styling 〉
+                    〈 disposition in canvas 〉
+                    〈 content plate build 〉
+
+Content acquisition → 〈 write-up 〉 |
+                      〈 conversion 〉 |
+                      〈 copy 〉
+Atomic content styling → 〈 live CSS attribution 〉 |
+                         〈 ODF sculpting 〉
+                         〈 CSS conversion 〉
+Disposition in canvas → 〈 HTML∘CSS composition 〉 |
+                        〈 ODF frame manipulation 〉
+                        〈 HTML∘CSS composition 〉
+Content plate build → 〈 atom conclusion 〉
+                      〈 canvas hanging 〉
+                      〈 validation 〉
+
+HTML∘CSS composition → 〈 Flexbox composition 〉 |
+                       〈 Grid layout 〉 |
+                       〈 Block positioning 〉
+</pre>
+
+<p>
+I use the expression “HTML∘CSS composition”, with a relation
+composition operator, very much on purpose: in this step, the correct
+<i>discursive</i> placement of content items respects the standards and
+best practices, with special regard to the HTML <i>content categories</i>,
+the use of idiomatic, scoped CSS, and a reasoned separation of
+concerns between the emphasis structure notation (HTML) and the
+graphical designation language (CSS). The resulting structure is very
+much a <i>product</i> type, since the <i>meaning</i> of the content is complete
+within a given canvas; the emphasis structure <i>and</i> the graphical
+style make a complete meaningful item.
+</p>
+
+<p>
+In that line of thought, I must put emphasis on my deep appreciation
+for Flexbox. I have written <i>Flexbox composition</i> because I think the
+Flexbox module is the most appropriate so far for logical
+composition. It encourages one to make content structures that can
+show their inner relations by way of the style rules themselves. In
+much the same way that Python is sometimes called <i>executable
+pseudocode</i>, I would be tempted to call Flexbox an <i>interpretable
+modular style guide</i>.
+</p>
+
+<p>
+In the <i>content plate build</i> phase, the first item in the sequence is
+named <i>atom conclusion</i>, where <i>conslusion</i> has its etymological
+sense. What I mean to convey is that node sequences, considered as
+sets, will be both <i>included</i> within other sets and <i>concatenated</i>
+into a canvas that can then be apprehended graphically (a visual
+sum). Here again I playfully use theoretical vocabulary in what is
+nonetheless a reasoned way.
+</p>
+
+<p>
+Depending on the tools at each step, conversions might happen multiple
+times both to and from HTML. The rule that I set for myself is: though
+some format pairings make round-trip conversions impractical or
+downright impossible, all data items in the source should appear in
+some form in the destination; if a data item cannot be sensibly
+reused, that poses the question of whether that data item was
+correctly encoded to begin with.
+</p>
+
+<p>
+Not all class variables are fully derived to terminal steps; they
+could be, but that is not the main point. The main point is that this
+description drives further improvements to the workflow and,
+correspondingly, the build script (<i>makefile</i> or otherwise). Thanks to
+that, I can leave you with both a concrete tool and a more abstract
+methodology that can be usefully adapted to many domains.
+</p>
+    </article>
+  </section>
+</main>
+<footer class="dms_leading-banner">
+  <article>
+    <a href="../.">    
+      <p>｢&nbsp;Stylus&nbsp;｣ DMS</p>
+      <p>© 2017 Christian Gagné</p>
+    </a>
+  </article>
+</footer>
+</body>
+</html>
