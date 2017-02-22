@@ -148,6 +148,10 @@ p[role="heading"] + p {
     flex-wrap: wrap;
 }
 
+.dms_context-leaders [role="heading"] p {
+    color: rgb(111, 78, 55);
+}
+
 .dms_page-topic {
     display: flex;
     align-items: flex-start;
@@ -186,6 +190,10 @@ p[role="heading"] + p {
 .dms_read-more:hover {
     color: rgb(111, 78, 55);
     background-color: inherit;
+}
+
+.dms_flow-stamp {
+    color: gray;
 }
 
 p[role="heading"] + p.dms_post-heading-addendum {

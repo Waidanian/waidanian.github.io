@@ -33,7 +33,7 @@ p, li, dd, blockquote {
     max-width: 28rem;
 }
 
-ul {
+ul, ol {
     list-style: inside;
     padding: 0;
 }
@@ -55,6 +55,21 @@ blockquote img {
 pre, code, kbd, var {
     font-family: "Consolas", "Menlo",
       "Source Code Pro", monospace;
+    font-size: 90%;
+    white-space: pre-wrap;
+}
+
+code dfn {
+    font-style: normal;
+    font-weight: bold;
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+      "Palatino", "Palatino Linotype", serif;
+}
+
+code var {
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+      "Palatino", "Palatino Linotype", serif;
+    font-size: 100%;
 }
 
 a {
