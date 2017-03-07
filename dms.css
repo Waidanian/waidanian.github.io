@@ -59,14 +59,14 @@ pre, code, kbd, var {
     white-space: pre-wrap;
 }
 
-code dfn {
+code dfn, .k, .ow {
     font-style: normal;
     font-weight: bold;
     font-family: "TeX Gyre Pagella", "TeX Palladio",
       "Palatino", "Palatino Linotype", serif;
 }
 
-code var {
+code var, .n, .nb, .bp, .nf {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
       "Palatino", "Palatino Linotype", serif;
     font-size: 100%;
@@ -211,6 +211,9 @@ p[role="heading"] + p {
     color: gray;
 }
 
+.dms_multiline-proglang {
+    max-width: 36rem;
+}
 p[role="heading"] + p.dms_post-heading-addendum {
     margin-top: 0;
 }
