@@ -38,6 +38,23 @@
         along with an earnest proposition to write a new module
         implementing the same algorithms within an industry-standard
           framework.</p>
+        <p>The code presented below is not exactly the same as that
+        developed for the course, and out of respect for the CS
+        department’s policy I will not reproduce the actual document
+        handed out to students, which gave them the proper context and
+        materials along with the functional specs to fulfill. The
+        course material has not been released under an open license
+        (to the best of my knowledge), so I will not apply such a
+        license to this present page. Instead, I am inviting the
+        reader to check back on this site for the upcoming
+        announcement of a separate public GitHub project in a similar
+        application domain – a project that has been inspired by this
+        ‘Level 0’ module, but with more complete functionality and
+        real applicability. The code below could probably be useful,
+        but I will not make a separate repository out of it. What
+        I <em>am</em> offering here is a report on a pedagogical
+        project, the analysis of which could be very useful for
+        teachers and learners alike.</p>
         <p>Special thanks go
           to <a href="https://github.com/jeanfrancisroy">Jean-Francis
           Roy</a>, who taught the course and with whom I worked as a
@@ -72,6 +89,15 @@
           <code>cdr</code> (oops sorry I mean <code>head</code>
           and <code>tail</code> <kbd>;-)</kbd>
           ) constructs. Very pedagogical indeed.</p>
+        <p>When this was taught, Python 3.6 had not yet been
+        released. Now that it has been, I joyfully add type
+        annotations whenever I can. I appreciate dynamic typing, but I
+        find it very useful for learning purposes that functions and
+        variables can now be annotated with a clear, uniform syntax
+        that does not run contrary to Python’s core syntax. Even
+        though no programmatic use is made of the annotations here, I
+        find them helpful for reasoning about what is being done in
+        each block.</p>
         <p role="heading">Extracting the text content</p>
         <p>The module’s functions accomplish work that is actually
         useful, but they were conceived first and foremost for their
@@ -129,7 +155,7 @@
         contains some minimal XPath support, but I have explicitly
         avoided that because in my experience, it confuses people and
         makes them think that selecting XML nodes is an esoteric
-        operation that can only be carried out byt specialized,
+        operation that can only be carried out by specialized
         declarative languages. Here, we are working with a
         general-purpose imperative programming language and yet the
         function is elegant and simple!
@@ -157,11 +183,11 @@
         the students were being taught recursion with functions
         generally defined at the module level. This is legitimate in
         the sense that Python can also be used in a functional style,
-        in which use of classes would be more conservative and instead
-        higher-order functions would be defined, for instance. I would
-        have liked going so far as to introduce some classic
-        higher-order functions, but unfortunately there was no time
-        (semesters always seem so short when teaching).</p>
+        in which the use of classes would be more conservative and
+        instead higher-order functions would be defined, for
+        instance. I would have liked going so far as to introduce some
+        classic higher-order functions, but unfortunately there was no
+        time (semesters always seem so short when teaching).</p>
     </article>
   </section>
 </main>
