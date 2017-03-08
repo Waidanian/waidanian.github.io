@@ -35,18 +35,16 @@
 <main>
   <section class="dms_cover-page">
     <article>
-        <p>Be it in visual or sonic domains, I strive to reveal the
-        power that modular thinking brings to design and
-        problem-solving. I believe in a digital literacy where all
-        actors – be they creatives, technicals, leaders or supporters
-        – feel empowered and work according to the strengths of their
-          respective cultures.</p>
+        <p>Be it in visual or sonic domains, I strive to apply modular
+        thinking to technical communication. I am an information
+        worker specializing in content design, document-based
+        programming and pedagogical projects.</p>
     </article>
   </section>
   <section class="dms_context-leaders">
     <article>
       <header role="heading">
-        <p>Portfolio, Propositions</p>
+        <p>Portfolio and propositions</p>
       </header>
         <p role="heading">｢&nbsp;Using TeX and related software in Web
           content production&nbsp;｣</p>
@@ -83,6 +81,15 @@
         </p>
         <p><a href="http://ecoledemusiquelavoie.com/"
             class="dms_read-more">·&nbsp;View project site&nbsp;·</a></p>
+        <p role="heading">｢&nbsp;Making a build system for structured
+        Web content&nbsp;｣</p>
+        <p class="dms_anchor-pad">I am in the process of formalizing
+        the workflow I favor when working with organizations on rich
+        content design and integration. This ongoing project will
+        yield a concrete tool and general principles that can be
+        applied in many content design situations.</p>
+        <p><a href="./content-build-system"
+        class="dms_read-more">·&nbsp;Read more&nbsp;·</a></p>
         <p role="heading">｢&nbsp;Teaching practical recursion to CS
         students by using industry-relevant, non-numeric data
         structures&nbsp;｣</p>
@@ -124,7 +131,7 @@
     </article>
     <article>
       <header role="heading">
-        <p>In Season</p>
+        <p>Events in season</p>
       </header>
       <ul>
         <li>The Raspberry Pi Foundation has
@@ -163,7 +170,7 @@
     </article>
     <article>
       <header role="heading">
-        <p>Aphoristic space</p>
+        <p>Essayistic pieces</p>
       </header>
         <p role="heading">｢&nbsp;Macros as cognitive catalysts in digital
         performance&nbsp;｣</p>
@@ -206,7 +213,7 @@
   <article>
     <a href=".">    
       <p>｢&nbsp;Stylus&nbsp;｣ DMS</p>
-      <p>© Christian Gagné 2017</p>
+      <p>© 2017 Christian Gagné</p>
     </a>
   </article>
 </footer>
