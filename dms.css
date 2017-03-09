@@ -11,7 +11,7 @@ html {
 }
 
 * + * {
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
 }
 
 body {
@@ -21,28 +21,18 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
-
 article {
     margin: 1rem;
 }
 
 p, li, dd, blockquote {
     max-width: 28rem;
+    line-height: 1.2em;
 }
 
 ul, ol {
     list-style: inside;
     padding: 0;
-}
-
-main article p,
-main article li,
-main article dd,
-main article blockquote {
-    line-height: 1.2em;
 }
 
 p img,
@@ -214,6 +204,7 @@ p[role="heading"] + p {
 .dms_multiline-proglang {
     max-width: 36rem;
 }
+
 p[role="heading"] + p.dms_post-heading-addendum {
     margin-top: 0;
 }
