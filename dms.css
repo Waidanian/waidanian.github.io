@@ -1,7 +1,7 @@
 html {
     font-size: 125%;
     font-family: "Charis SIL", "Bitstream Charter",
-      "Constantia", "Georgia", "Palatino", serif;
+      "Georgia", serif;
     line-height: 1.5em;
     height: 100%;
 }
@@ -44,7 +44,7 @@ blockquote img {
 
 pre, code, kbd, var {
     font-family: "Consolas", "Menlo",
-      "Source Code Pro", monospace;
+      "Source Code Pro", "Ubuntu Mono", monospace;
     font-size: 90%;
     white-space: pre-wrap;
 }
