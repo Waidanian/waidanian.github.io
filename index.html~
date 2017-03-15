@@ -11,7 +11,7 @@
   <header>
     <article class="dms_card">
     <header role="heading">
-        <p>｢&nbsp;Stylus&nbsp;｣</p>
+        <p>｢ Stylus ｣</p>
         <p>Digital Modular Systems</p>
         <p class="dms_saying">Harmonizing Logic and Craft</p>
     </header>
@@ -46,8 +46,8 @@
       <header role="heading">
         <p>Portfolio and propositions</p>
       </header>
-        <p role="heading">｢&nbsp;Using TeX and related software in Web
-          content production&nbsp;｣</p>
+        <p role="heading">Using TeX and related software in Web
+          content production</p>
         <p class="dms_anchor-pad">My <a href="https://waidanian.github.io/organic-tex-demo/">Organic
           TeX Demo</a> shows how TeX / LaTeX, Emacs Org-mode and other
           document formats based on macros can be used to produce
@@ -64,10 +64,10 @@
           publishing work in the digital
           humanities.</p>
         <p><a href="https://waidanian.github.io/organic-tex-demo/"
-          class="dms_read-more">·&nbsp;View project page&nbsp;·</a></p>
-        <p role="heading">｢&nbsp;Developing a content workflow and custom
+          class="dms_read-more">· View project page ·</a></p>
+        <p role="heading">Developing a content workflow and custom
         styles for an institutional website on the Squarespace
-        platform&nbsp;｣</p>
+        platform</p>
         <p class="dms_anchor-pad">My work with
             the <a href="http://ecoledemusiquelavoie.com/">Lavoie
             music school</a>
@@ -80,22 +80,22 @@
         community who discover new passions through musical practice.
         </p>
         <p><a href="http://ecoledemusiquelavoie.com/"
-            class="dms_read-more">·&nbsp;View project site&nbsp;·</a></p>
-        <p role="heading">｢&nbsp;Making a build system for structured
-        Web content&nbsp;｣</p>
+            class="dms_read-more">· View project site ·</a></p>
+        <p role="heading">Making a build system for structured
+        Web content</p>
         <p class="dms_anchor-pad">I am in the process of formalizing
         the workflow I favor when working with organizations on rich
         content design and integration. This ongoing project will
         yield a concrete tool and general principles that can be
         applied in many content design situations.</p>
         <p><a href="./content-build-system"
-        class="dms_read-more">·&nbsp;Read more&nbsp;·</a></p>
-        <p role="heading">｢&nbsp;Teaching practical recursion to CS
+        class="dms_read-more">· Read more ·</a></p>
+        <p role="heading">Teaching practical recursion to CS
         students by using industry-relevant, non-numeric data
-        structures&nbsp;｣</p>
+        structures</p>
         <p class="dms_post-heading-addendum
-          dms_proposition">（&nbsp;Developing the ‘<em>Needledrop</em> Level
-          0’ Python module&nbsp;）</p>
+          dms_proposition">（ Developing the ‘<em>Needledrop</em> Level
+          0’ Python module ）</p>
         <p class="dms_anchor-pad">While working as a teaching
         assistant in an introductory programming course designed for
         Computer Science and Software Engineering students, I realized
@@ -109,10 +109,10 @@
         new module implementing the same algorithms within an
           industry-standard framework.</p>
         <p><a href="./needledrop-proposal"
-        class="dms_read-more">·&nbsp;Read more&nbsp;·</a></p>
-        <p role="heading">｢&nbsp;Creating an empowering relational
+        class="dms_read-more">· Read more ·</a></p>
+        <p role="heading">Creating an empowering relational
           vocabulary and meaningful visualizations for editorial
-          projects in the digital humanities&nbsp;｣
+          projects in the digital humanities
         </p>
         <p class="dms_anchor-pad">The <a href="https://github.com/HU15/">HU15</a>
         group is a collective of researchers in the field of French
@@ -126,7 +126,7 @@
         text</a> <code>(fr)</code>, in a manner that is respectful of
           a text historian’s techniques and cognitive goals.</p>
         <p><a href="http://hu15.github.io/histoires-universelles-xv/"
-        class="dms_read-more">·&nbsp;View project site&nbsp;·</a>
+        class="dms_read-more">· View project site ·</a>
         </p>
     </article>
     <article>
@@ -140,7 +140,7 @@
           supporting the community of educators in the UK and beyond
           who integrate computing into their curricular
           activities. The first issue is available now. I find myself
-          particularly awed by the article running pp.&nbsp;18–20
+          particularly awed by the article running pp.18–20
           about <a href="https://en.wikipedia.org/wiki/Seymour_Papert">Seymour
           Papert</a>’s influential view of education. As the author
           puts it: profound education means that learning is
@@ -172,8 +172,8 @@
       <header role="heading">
         <p>Essayistic pieces</p>
       </header>
-        <p role="heading">｢&nbsp;Macros as cognitive catalysts in digital
-        performance&nbsp;｣</p>
+        <p role="heading">Macros as cognitive catalysts in digital
+        performance</p>
         <p class="dms_post-heading-addendum"><time datetime="2016-12-21">2016-12-21</time></p>
         <p>Consider real-time applications, such as audio signal
         processing in the context of live performance. One
@@ -212,7 +212,7 @@
 <footer class="dms_leading-banner">
   <article>
     <a href=".">    
-      <p>｢&nbsp;Stylus&nbsp;｣ DMS</p>
+      <p>｢ Stylus ｣ DMS</p>
       <p>© 2017 Christian Gagné</p>
     </a>
   </article>

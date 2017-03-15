@@ -1,7 +1,7 @@
 html {
     font-size: 125%;
     font-family: "Charis SIL", "Bitstream Charter",
-      "Constantia", "Georgia", "Palatino", serif;
+      "Georgia", serif;
     line-height: 1.5em;
     height: 100%;
 }
@@ -11,7 +11,7 @@ html {
 }
 
 * + * {
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
 }
 
 body {
@@ -21,28 +21,18 @@ body {
     flex-direction: column;
 }
 
-main {
-    flex: 1;
-}
-
 article {
     margin: 1rem;
 }
 
 p, li, dd, blockquote {
     max-width: 28rem;
+    line-height: 1.2em;
 }
 
-ul {
+ul, ol {
     list-style: inside;
     padding: 0;
-}
-
-main article p,
-main article li,
-main article dd,
-main article blockquote {
-    line-height: 1.2em;
 }
 
 p img,
@@ -54,7 +44,22 @@ blockquote img {
 
 pre, code, kbd, var {
     font-family: "Consolas", "Menlo",
-      "Source Code Pro", monospace;
+      "Source Code Pro", "Ubuntu Mono", monospace;
+    font-size: 90%;
+    white-space: pre-wrap;
+}
+
+code dfn, .k, .ow {
+    font-style: normal;
+    font-weight: bold;
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+      "Palatino", "Palatino Linotype", serif;
+}
+
+code var, .n, .nb, .bp, .nf {
+    font-family: "TeX Gyre Pagella", "TeX Palladio",
+      "Palatino", "Palatino Linotype", serif;
+    font-size: 100%;
 }
 
 a {
@@ -194,6 +199,10 @@ p[role="heading"] + p {
 
 .dms_flow-stamp {
     color: gray;
+}
+
+.dms_multiline-proglang {
+    max-width: 36rem;
 }
 
 p[role="heading"] + p.dms_post-heading-addendum {
