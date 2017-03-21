@@ -11,7 +11,7 @@
 <header role="heading" class="dms_leading-banner">
   <article>
     <a href="../.">    
-      <p>｢&nbsp;Stylus&nbsp;｣</p>
+      <p>｢ Stylus ｣</p>
       <p>Digital Modular Systems</p>
     </a>
   </article>
@@ -19,9 +19,8 @@
 <main>
   <section class="dms_page-topic">
     <article>
-      <header role="heading"><p>｢&nbsp;A Build System for Web
-          Content&nbsp;｣</p>
-        <p class="dms_flow-stamp">·&nbsp;work-in-progress&nbsp;·</p>
+      <header role="heading"><p>A build system for Web content</p> <p
+      class="dms_flow-stamp">· work-in-progress ·</p>
       </header>
 <p>
 In order to produce great content and integrate it successfully into a
@@ -103,16 +102,17 @@ many sections as necessary.
 
 <p>
 Structuring the content in this way has many advantages over simply
-relying on the sequence of <code>h1</code> &#x2026; <code>h6</code> elements dispersed among
-paragraphs. <code>section</code> elements add paired delimiters that make more
-relations explicit, which in turn makes contextual styling and
-transclusion easier. The elusive “HTML layout algorithm” might have
-been shunned by the mainstream HTML5 implementations, but at any rate
-nothing prevents us from adding more structure around the parts of
-content runs! In HTML5.1, we are even explicitly allowed to add a
-<code>header</code> element as the first element of any enclosing <code>section</code> – it
-will even automatically receive a different ARIA role from that of the
-page’s outermost <code>header</code>. This is great for e.g. titling blocks
+relying on the sequence of <code>h1</code> ... <code>h6</code>
+elements dispersed among paragraphs. <code>section</code> elements add
+paired delimiters that make more relations explicit, which in turn
+makes contextual styling and transclusion easier. The elusive “HTML
+layout algorithm” might have been shunned by the mainstream HTML5
+implementations, but at any rate nothing prevents us from adding more
+structure around the parts of content runs! In HTML5.1, we are even
+explicitly allowed to add a <code>header</code> element as the first
+element of any enclosing <code>section</code> – it will even
+automatically receive a different ARIA role from that of the page’s
+outermost <code>header</code>. This is great for e.g. titling blocks
 containing ancillary information items that must receive their own
 scoped style rules.
 </p>
@@ -246,8 +246,8 @@ methodology that can be usefully adapted to many domains.
 </main>
 <footer class="dms_leading-banner">
   <article>
-    <a href="../.">    
-      <p>｢&nbsp;Stylus&nbsp;｣ DMS</p>
+    <a href="../.">
+      <p>｢ Stylus ｣ DMS</p>
       <p>© 2017 Christian Gagné</p>
     </a>
   </article>

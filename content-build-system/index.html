@@ -74,18 +74,23 @@ page. This is one of the first steps in my typical <code>make</code> file.
 <p role="heading">Atomic content styling</p>
 <p>
 Because the content atoms have been extracted into separate files,
-they can be included as individual content frames in my LibreOffice
-Draw prototype. The Draw prototyping does not come into the scope of
-the present article <i>per se</i>, but I will provide a more detailed
-account of it elsewhere. Now this is the hot part: my Draw prototype
-<i>references</i> the content atoms, so by default they remain as separate
-files and don’t need to be explicitly re-included if I modifify them
-from outside. This allows me to lead the <i>content prototyping</i>
-(acquisition) and the <i>content styling</i> steps concurrently. Right now,
-LibreOffice Draw is my tool of choice for that because it has some
-intrinsic advantages when working with highly-structured HTML, but of
-course many alternatives exist. You can consider the prototyping tool
-like another swappable module in the system I’m describing here.
+they can be included as individual content frames in my SVG/ODG, PDF
+or PNG prototype. The software used for graphical prototyping does not
+come into the scope of the present article <i>per se</i>, but I will
+provide a more detailed account of it elsewhere. Now this is an
+important detail: ideally my graphical prototype
+<em>references</em> the content atoms, so by default they remain as
+separate files and don’t need to be explicitly re-included if I modify
+them from outside. This allows me to lead the <i>content
+prototyping</i> (acquisition) and the <i>content styling</i> steps
+concurrently. Right now, LibreOffice (ODG, SVG and PDF), GIMP (PNG)
+and the TeX system (SVG and PDF) are my tools of choice for that
+because they have some intrinsic advantages when working with
+highly-structured HTML, but of course many alternatives exist. You can
+consider the prototyping tool like another swappable module in the
+system I’m describing here. In fact, not all projects require these
+tools for prototyping; I like to prototype directly in HTML and CSS
+when the context is right.
 </p>
 
 <p role="heading">Disposition in canvas</p>
@@ -170,11 +175,11 @@ and that these variable expressions were originally called <i>classes</i>
   | 〈 <var>copy</var> 〉;
 <dfn>Atomic content styling</dfn> →
     〈 <var>live CSS attribution</var> 〉
-  | 〈 <var>ODF sculpting</var> 〉
+  | 〈 <var>graphical sculpting</var> 〉
     〈 <var>CSS conversion</var> 〉;
 <dfn>Disposition in canvas</dfn> →
     〈 <var>HTML∘CSS composition</var> 〉
-  | 〈 <var>ODF frame manipulation</var> 〉
+  | 〈 <var>graphical frame manipulation</var> 〉
     〈 <var>HTML∘CSS composition</var> 〉;
 <dfn>Content plate build</dfn> →
     〈 <var>atom conclusion</var> 〉
