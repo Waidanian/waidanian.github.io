@@ -111,19 +111,22 @@ p[role="heading"] + p {
 }
 
 .dms_card {
+    border: 1px solid rgb(229, 228, 226);
+    min-width: 18.2rem;
+    min-height: 11rem;
+    /* Unless the content makes it grow, this container will have the
+   aspect ratio and the relative dimensions of a business card. */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .dms_look-across {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    line-height: 1.25em;
-    margin-top: 1rem;
 }
 
 .dms_logo {

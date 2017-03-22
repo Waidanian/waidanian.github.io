@@ -8,12 +8,19 @@
 <link href="dms.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
-  <header>
+<header role="heading" class="dms_leading-banner">
+  <article>
+    <a href="../.">    
+      <p>｢ Stylus ｣</p>
+      <p>Digital Modular Systems</p>
+    </a>
+  </article>
+</header>
+<main>
+  <section class="dms_cover-page">
     <article class="dms_card">
     <header role="heading">
-        <p>｢ Stylus ｣</p>
-        <p>Digital Modular Systems</p>
-        <p class="dms_saying">Harmonizing Logic and Craft</p>
+      <p class="dms_saying">Harmonizing Logic and Craft</p>
     </header>
     <section class="dms_look-across">
       <section class="dms_logo" title="The Stylus
@@ -31,14 +38,13 @@
         </section>
     </section>
     </article>
-  </header>
-<main>
-  <section class="dms_cover-page">
     <article>
         <p>Be it in visual or sonic domains, I strive to apply modular
         thinking to technical communication. I am an information
-        worker specializing in content design, document-based
-        programming and pedagogical projects.</p>
+        worker specializing
+        in <a href="https://www.gov.uk/guidance/content-design/what-is-content-design">content
+        design</a>, <a href="http://www.literateprogramming.com/">document-based
+        programming</a> and pedagogical projects.</p>
     </article>
   </section>
   <section class="dms_context-leaders">
@@ -46,7 +52,36 @@
       <header role="heading">
         <p>Portfolio and propositions</p>
       </header>
-        <p role="heading">Using TeX and related software in Web
+        <p role="heading">Making a build system for structured
+        Web content</p>
+        <p class="dms_anchor-pad">I am in the process of formalizing
+        the workflow I favor when working with organizations on rich
+        content design and integration. This ongoing project will
+        yield a concrete tool and general principles that can be
+        applied in many content design situations.</p>
+        <p><a href="./content-build-system"
+        class="dms_read-more">· Read more ·</a></p>
+        <p role="heading">Teaching practical recursion to CS
+        students by using industry-relevant, non-numeric data
+        structures</p>
+        <p class="dms_post-heading-addendum
+          dms_proposition">（ Developing the ‘<em>Needledrop</em> Level
+          0’ Python module ）</p>
+        <p class="dms_anchor-pad">While working as a teaching
+        assistant in an introductory programming course designed for
+        Computer Science and Software Engineering students, I realized
+        that students often struggle to grasp the practical importance
+        of recursion when it is first taught to them using binary
+        search trees and suchlike. I designed a new exercise about
+        writing recursive functions that parse narrative XHTML
+        documents, precisely the kind of recursive data structure that
+        is extremely common on the Web. Here is an impression of the
+        resulting module, along with an earnest proposition to write a
+        new module implementing the same algorithms within an
+          industry-standard framework.</p>
+        <p><a href="./needledrop-proposal"
+        class="dms_read-more">· Read more ·</a></p>
+      <p role="heading">Using TeX and related software in Web
           content production</p>
         <p class="dms_anchor-pad">My <a href="https://waidanian.github.io/organic-tex-demo/">Organic
           TeX Demo</a> shows how TeX / LaTeX, Emacs Org-mode and other
@@ -81,35 +116,6 @@
         </p>
         <p><a href="http://ecoledemusiquelavoie.com/"
             class="dms_read-more">· View project site ·</a></p>
-        <p role="heading">Making a build system for structured
-        Web content</p>
-        <p class="dms_anchor-pad">I am in the process of formalizing
-        the workflow I favor when working with organizations on rich
-        content design and integration. This ongoing project will
-        yield a concrete tool and general principles that can be
-        applied in many content design situations.</p>
-        <p><a href="./content-build-system"
-        class="dms_read-more">· Read more ·</a></p>
-        <p role="heading">Teaching practical recursion to CS
-        students by using industry-relevant, non-numeric data
-        structures</p>
-        <p class="dms_post-heading-addendum
-          dms_proposition">（ Developing the ‘<em>Needledrop</em> Level
-          0’ Python module ）</p>
-        <p class="dms_anchor-pad">While working as a teaching
-        assistant in an introductory programming course designed for
-        Computer Science and Software Engineering students, I realized
-        that students often struggle to grasp the practical importance
-        of recursion when it is first taught to them using binary
-        search trees and suchlike. I designed a new exercise about
-        writing recursive functions that parse narrative XHTML
-        documents, precisely the kind of recursive data structure that
-        is extremely common on the Web. Here is an impression of the
-        resulting module, along with an earnest proposition to write a
-        new module implementing the same algorithms within an
-          industry-standard framework.</p>
-        <p><a href="./needledrop-proposal"
-        class="dms_read-more">· Read more ·</a></p>
         <p role="heading">Creating an empowering relational
           vocabulary and meaningful visualizations for editorial
           projects in the digital humanities
@@ -134,6 +140,21 @@
         <p>Events in season</p>
       </header>
       <ul>
+        <li>Québec City’s
+          ‘<a href="https://semainenumerique.com/">Digital
+          Week</a>’ <code>(fr)</code> is on the horizon. I will be
+          attending several events,
+          especially <a href="https://webaquebec.org/">WAQ17</a> <code>(fr)</code>,
+          and I will be cheering on my colleagues taking part in the
+          Pixel Challenge! I am pleased to see this
+          multi-event grow and become more and more inclusive of the
+          various fields that make up the Digital Domain.</li>
+        <li>The <a href="http://tug.org/">TeX Users Group</a>’s
+          activity calendar is looking very good again this year. Do
+          stay tuned on the website, eventually through its XML feeds,
+          in order to learn first-hand about the latest developments
+          in the community that develops and maintains the very best
+            suite of document production tools!</li>
         <li>The Raspberry Pi Foundation has
           announced <a href="https://www.raspberrypi.org/helloworld">a
           new publication, a magazine entitled <i>HelloWorld</i></a>,
@@ -152,20 +173,6 @@
           in key projects within an educational context, and I do
           intend to make the young-at-heart who work with me embark on
           a wholesome cognitive journey... Stay tuned.</li>
-        <li>The <a href="http://tug.org/">TeX Users Group</a>’s
-          activity calendar is looking very good again this year. Do
-          stay tuned on the website, eventually through its XML feeds,
-          in order to learn first-hand about the latest developments
-          in the community that develops and maintains the very best
-            suite of document production tools!</li>
-        <li>Québec City’s
-          ‘<a href="https://semainenumerique.com/">Digital
-          Week</a>’ <code>(fr)</code> is on the horizon. I will be
-          attending several events,
-          especially <a href="https://webaquebec.org/">WAQ17</a> <code>(fr)</code>
-          and the famed Warp Zone! I am pleased to see this
-          multi-event grow and become more and more inclusive of the
-          various fields that make up the Digital Domain.</li>
       </ul>
     </article>
     <article>
