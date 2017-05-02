@@ -22,6 +22,7 @@ body {
 }
 
 main {
+    margin: 0;
     flex-grow: 1;
     /* This allows the footer to always be at the bottom of the viewport
    even if `main`’s content is very short */
@@ -111,35 +112,39 @@ p[role="heading"] + p {
 }
 
 .dms_card {
-    border: 1px solid rgb(229, 228, 226);
-    min-width: 18.2rem;
-    min-height: 11rem;
+    outline: 1px solid rgb(229, 228, 226);
+    min-width: 16rem;
+    min-height: 9.6rem;
     /* Unless the content makes it grow, this container will have the
    aspect ratio and the relative dimensions of a business card. */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .dms_look-across {
+    align-self: stretch;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
+.dms_look-across > * {
+    margin: 0;
+}
+
 .dms_logo {
-    font-size: 4rem;
-    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .dms_logo img {
     width: 4rem;
-}
-
-.dms_contact-info {
-    margin: 0;
 }
 
 .dms_contact-info p img,
@@ -150,21 +155,65 @@ p[role="heading"] + p {
 }
 
 .dms_cover-page {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url("cpbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+
+.dms_see-through {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /*background-color: rgba(255, 255, 255, 0.6);*/
+}
+
+.dms_over-photographic {
+    color: white;
+    text-shadow: 1px 0px 0 black;
+}
+
+.dms_big-statement {
+    font-size: 200%;
+    text-align: center;
 }
 
 .dms_context-leaders {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .dms_context-leaders [role="heading"] p {
     color: rgb(111, 78, 55);
+}
+
+.dms_plate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dms_card-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /*change to make grid without lone centered items*/
+    flex-wrap: wrap;
 }
 
 .dms_page-topic {
@@ -213,6 +262,11 @@ p[role="heading"] + p {
 
 .dms_multiline-proglang {
     max-width: 36rem;
+}
+
+.dms_box-drawing {
+    font-size: 1.2rem;
+    line-height: 1em;
 }
 
 p[role="heading"] + p.dms_post-heading-addendum {

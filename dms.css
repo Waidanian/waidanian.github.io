@@ -22,6 +22,7 @@ body {
 }
 
 main {
+    margin: 0;
     flex-grow: 1;
     /* This allows the footer to always be at the bottom of the viewport
    even if `main`’s content is very short */
@@ -112,14 +113,15 @@ p[role="heading"] + p {
 
 .dms_card {
     outline: 1px solid rgb(229, 228, 226);
-    min-width: 18rem;
-    min-height: 10.8rem;
+    min-width: 16rem;
+    min-height: 9.6rem;
     /* Unless the content makes it grow, this container will have the
    aspect ratio and the relative dimensions of a business card. */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .dms_look-across {
@@ -153,22 +155,78 @@ p[role="heading"] + p {
 }
 
 .dms_cover-page {
+    margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image: url("cpbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom right;
+}
+
+.dms_see-through {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /*background-color: rgba(255, 255, 255, 0.6);*/
+}
+
+.dms_over-photographic {
+    color: white;
+    text-shadow: 1px 0px 0 black;
+}
+
+.dms_big-statement {
+    font-size: 200%;
+    text-align: center;
 }
 
 .dms_context-leaders {
+    margin: 0;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .dms_context-leaders [role="heading"] p {
     color: rgb(111, 78, 55);
+}
+
+.dms_plate {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.dms_plate > header {
+    margin: 0;
+    background-color: rgb(229, 228, 226);
+}
+
+.dms_card-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.dms_plate [role="heading"] p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 200%;
 }
 
 .dms_page-topic {
