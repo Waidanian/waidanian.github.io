@@ -112,7 +112,6 @@ p[role="heading"] + p {
 }
 
 .dms_card {
-    outline: 1px solid rgb(229, 228, 226);
     min-width: 16rem;
     min-height: 9.6rem;
     /* Unless the content makes it grow, this container will have the
@@ -160,12 +159,11 @@ p[role="heading"] + p {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap;
     background-image: url("cpbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom right;
+    background-attachment: scroll;
+    background-position: center;
 }
 
 .dms_see-through {
@@ -173,7 +171,6 @@ p[role="heading"] + p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
     margin-top: 2rem;
     margin-bottom: 2rem;
     /*background-color: rgba(255, 255, 255, 0.6);*/
@@ -195,7 +192,6 @@ p[role="heading"] + p {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .dms_context-leaders [role="heading"] p {
@@ -208,7 +204,6 @@ p[role="heading"] + p {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .dms_plate > header {
@@ -284,4 +279,14 @@ p[role="heading"] + p {
 
 p[role="heading"] + p.dms_post-heading-addendum {
     margin-top: 0;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 100%;
+    }
+    
+    article {
+        margin: 0.5rem;
+    }
 }
