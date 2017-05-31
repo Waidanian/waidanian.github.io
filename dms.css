@@ -112,6 +112,7 @@ p[role="heading"] + p {
 }
 
 .dms_card {
+    font-size: 80%;
     min-width: 16rem;
     min-height: 9.6rem;
     /* Unless the content makes it grow, this container will have the
@@ -171,8 +172,8 @@ p[role="heading"] + p {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     /*background-color: rgba(255, 255, 255, 0.6);*/
 }
 
@@ -231,6 +232,13 @@ p[role="heading"] + p {
     flex-wrap: wrap;
 }
 
+.dms_page-topic p,
+.dms_page-topic li,
+.dms_page-topic dd,
+.dms_page-topic blockquote {
+    max-width: 36rem;
+}
+
 .dms_saying {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
       "Palatino", "Palatino Linotype", serif;
@@ -268,10 +276,6 @@ p[role="heading"] + p {
     color: gray;
 }
 
-.dms_multiline-proglang {
-    max-width: 36rem;
-}
-
 .dms_box-drawing {
     font-size: 1.2rem;
     line-height: 1em;
@@ -281,7 +285,10 @@ p[role="heading"] + p.dms_post-heading-addendum {
     margin-top: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+    /* Here 600px is not a magic number, it is the outer width of
+    atomic content items, hence the breakpoint is content-based,
+    not device-based. */
     html {
         font-size: 100%;
     }
