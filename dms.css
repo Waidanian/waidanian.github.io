@@ -1,7 +1,7 @@
 html {
     font-size: 125%;
     font-family: "Charis SIL", "Bitstream Charter",
-      "Georgia", serif;
+      "Cambria", "Georgia", "Hoefler Text", serif;
     line-height: 1.5em;
     height: 100%;
 }
@@ -11,7 +11,7 @@ html {
 }
 
 * + * {
-    margin-top: 0.6rem;
+    margin-top: 0.65rem;
 }
 
 body {
@@ -32,9 +32,59 @@ article {
     margin: 1rem;
 }
 
-p, li, dd, blockquote {
+p, li, dd {
     max-width: 28rem;
-    line-height: 1.2em;
+    line-height: 1.3em;
+}
+
+blockquote {
+    max-width: 26rem;
+    line-height: 1.3em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+blockquote::before {
+    content: '“';
+    display: block;
+    font-size: 1.5em;
+}
+
+blockquote::after {
+    content: '”';
+    display: block;
+    font-size: 1.5em;
+    text-align: right;
+}
+
+h1 {
+    max-width: 28rem;
+    font-size: 150%;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h2 {
+    max-width: 28rem;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+h3, h4, h5, h6 {
+    max-width: 28rem;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(111, 78, 55);
+}
+
+h4, h5, h6 {
+    max-width: 28rem;
+    font-size: 100%;
+    font-weight: normal;
+    font-style: italic;
+    color: rgb(229, 228, 226);
 }
 
 ul, ol {
@@ -82,6 +132,19 @@ time {
     font-family: "TeX Gyre Pagella", "TeX Palladio",
       "Palatino", "Palatino Linotype", serif;
     font-size: 80%;
+}
+
+ins {
+    text-decoration: none;
+    font-style: normal;
+}
+
+ins::before {
+    content: '[';
+}
+
+ins::after {
+    content: ']';
 }
 
 [role="heading"] p {
@@ -235,8 +298,22 @@ p[role="heading"] + p {
 .dms_page-topic p,
 .dms_page-topic li,
 .dms_page-topic dd,
-.dms_page-topic blockquote {
+.dms_page-topic h1,
+.dms_page-topic h2,
+.dms_page-topic h3,
+.dms_page-topic h4,
+.dms_page-topic h5,
+.dms_page-topic h6 {
     max-width: 36rem;
+}
+
+.dms_page-topic blockquote {
+    max-width: 34rem;
+}
+
+.dms_post-heading-addendum {
+    text-align: right;
+    line-height: 1.3em;
 }
 
 .dms_saying {
